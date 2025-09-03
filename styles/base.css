@@ -1,123 +1,124 @@
-/* Fonts and global styles */
+/* Global Styles */
 body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    background: #fff0f5; /* pastel pink background */
-    color: #444;
-    line-height: 1.7;
-  }
-  
-  /* Header */
-  header {
-    background: #ffcce5; /* soft pastel pink */
-    color: #5a3e47;
-    text-align: center;
-    padding: 1.5rem;
-    border-bottom: 4px solid #ffb6c1;
-  }
-  
-  #course-title {
-    display: block;
-    font-size: 1.6rem;
-    font-weight: bold;
-    font-family: 'Sacramento', cursive;
-  }
-  
-  .highlight {
-    color: #e75480; /* rose highlight */
-  }
-  
-  /* Navigation */
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 0.8rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    background: #e75480;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    transition: all 0.3s;
-  }
-  
-  nav a:hover {
-    background: #fff;
-    color: #e75480;
-    border: 2px solid #e75480;
-  }
-  
-  /* Main layout */
-  main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    display: grid;
-    gap: 2rem;
-  }
-  
-  h1 {
-    text-align: center;
-    font-family: 'Sacramento', cursive;
-    font-size: 2.5rem;
-    color: #e75480;
-  }
-  
-  .card {
-    background: #fff;
-    border-radius: 1.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(231, 84, 128, 0.2);
-    border: 2px solid #ffe4ec;
-  }
-  
-  .card h2 {
-    text-align: center;
-    color: #e75480;
-  }
-  
-  .card h3 {
-    margin-top: 1.2rem;
-    border-top: 1px dashed #ffb6c1;
-    padding-top: 0.6rem;
-    color: #5a3e47;
-    text-align: center;
-  }
-  
-  .content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .profile {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid #ffb6c1;
-  }
-  
-  .flag {
-    width: 100px;
-    border-radius: 0.5rem;
-    border: 2px solid #ffe4ec;
-  }
-  
-  /* Footer */
-  footer {
-    background: #ffcce5;
-    color: #5a3e47;
-    text-align: center;
-    padding: 1.2rem;
-    font-size: 0.9rem;
-    border-top: 4px solid #ffb6c1;
-  }
-  
-  #lastModified {
-    color: #e75480;
-  }
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: #fff0f5;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: #ffcce5;
+  color: #3a1f25;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 4px solid #e75480;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: 'Sacramento', cursive;
+}
+
+.highlight {
+  color: #b22234;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background: #b22234;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #b22234;
+  border: 2px solid #b22234;
+}
+
+/* Main Layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5rem;
+  color: #b22234;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(231, 84, 128, 0.2);
+  border: 2px solid #ffe4ec;
+}
+
+.card h2 {
+  text-align: center;
+  color: #b22234;
+}
+
+.card h3 {
+  margin-top: 1.2rem;
+  border-top: 1px dashed #b22234;
+  padding-top: 0.6rem;
+  color: #3a1f25;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.profile {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #ffb6c1;
+}
+
+.flag {
+  width: 100px;
+  border-radius: 0.5rem;
+  border: 2px solid #ffe4ec;
+}
+
+/* Footer */
+footer {
+  background: #ffcce5;
+  color: #3a1f25;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  border-top: 4px solid #e75480;
+}
+
+#lastModified {
+  color: #b22234;
+}
+
   
