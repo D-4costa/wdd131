@@ -28,6 +28,7 @@
   </header>
 
   <main>
+    <!-- ✅ H1 definido directamente en HTML -->
     <h1>Temple Album</h1>
 
     <section class="gallery">
@@ -47,21 +48,5 @@
     <p>&copy; <span id="year"></span> Danielle Elisabeth Acosta Clavijo — <span id="last-modified"></span></p>
     <p>Course WDD 131 — Dynamic Web Fundamentals</p>
   </footer>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      const hs = Array.from(document.getElementsByTagName('h1'));
-      if (hs.length === 0) {
-        const h = document.createElement('h1');
-        h.textContent = 'Temple Album';
-        const main = document.querySelector('main') || document.body;
-        main.insertBefore(h, main.firstChild);
-      } else {
-        for (let i = 1; i < hs.length; i++) hs[i].remove();
-        hs[0].textContent = 'Temple Album';
-      }
-      if (document.title !== 'Temple Album') document.title = 'Temple Album';
-    });
-  </script>
 </body>
 </html>
