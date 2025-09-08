@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Temple Album</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 800px)">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Temple Album</div>
+    <button class="hamburger" id="hamburger" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+      <span class="hamburger-icon">☰</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>LDS Temple Gallery</h1>
+    <section class="gallery">
+      <figure><img src="images/salt-lake.jpg" alt="Salt Lake Temple" loading="lazy"><figcaption>Salt Lake Temple</figcaption></figure>
+      <figure><img src="images/san-diego.jpg" alt="San Diego California Temple" loading="lazy"><figcaption>San Diego California Temple</figcaption></figure>
+      <figure><img src="images/nauvoo.jpg" alt="Nauvoo Illinois Temple" loading="lazy"><figcaption>Nauvoo Illinois Temple</figcaption></figure>
+      <figure><img src="images/provo-city-center.jpg" alt="Provo City Center Temple" loading="lazy"><figcaption>Provo City Center Temple</figcaption></figure>
+      <figure><img src="images/rome.jpg" alt="Rome Italy Temple" loading="lazy"><figcaption>Rome Italy Temple</figcaption></figure>
+      <figure><img src="images/bountiful.jpg" alt="Bountiful Utah Temple" loading="lazy"><figcaption>Bountiful Utah Temple</figcaption></figure>
+      <figure><img src="images/laie.jpg" alt="Laie Hawaii Temple" loading="lazy"><figcaption>Laie Hawaii Temple</figcaption></figure>
+      <figure><img src="images/mexico-city.jpg" alt="Mexico City Mexico Temple" loading="lazy"><figcaption>Mexico City Mexico Temple</figcaption></figure>
+      <figure><img src="images/paris.jpg" alt="Paris France Temple" loading="lazy"><figcaption>Paris France Temple</figcaption></figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Danielle Elisabeth Acosta Clavijo — <span id="last-modified"></span></p>
+    <p>Course WDD 131 — Dynamic Web Fundamentals</p>
+  </footer>
+</body>
+</html>
