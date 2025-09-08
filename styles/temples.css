@@ -3,8 +3,8 @@
 :root {
   --bg: #fff9fb;
   --card: #ffffff;
-  --accent: #d946ef;        /* rosa-violeta accesible */
-  --accent-hover: #a21caf;  /* hover más intenso */
+  --accent: #d946ef;
+  --accent-hover: #a21caf;
   --muted: #6b7280;
   --gap: 1rem;
   --radius: 16px;
@@ -16,7 +16,7 @@
 body { 
   margin: 0; 
   background: var(--bg); 
-  color: #333; 
+  color: #333;  
 }
 
 .site-header { 
