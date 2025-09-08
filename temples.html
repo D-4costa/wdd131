@@ -3,13 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <meta name="description" content="Temple Album - A pastel styled gallery of temples of The Church of Jesus Christ of Latter-day Saints, including Salt Lake, San Diego, Nauvoo, Provo City Center, Rome, Bountiful, Laie, Mexico City, and Paris.">
   <meta name="author" content="Danielle Elisabeth Acosta Clavijo">
   <meta name="keywords" content="LDS temples, Temple Album, Salt Lake Temple, San Diego Temple, Nauvoo Temple, Provo Temple, Rome Temple, Bountiful Temple, Laie Temple, Mexico City Temple, Paris Temple">
-
   <title>Temple Album</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/temples.css">
   <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 800px)">
@@ -50,5 +47,21 @@
     <p>&copy; <span id="year"></span> Danielle Elisabeth Acosta Clavijo — <span id="last-modified"></span></p>
     <p>Course WDD 131 — Dynamic Web Fundamentals</p>
   </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      const hs = Array.from(document.getElementsByTagName('h1'));
+      if (hs.length === 0) {
+        const h = document.createElement('h1');
+        h.textContent = 'Temple Album';
+        const main = document.querySelector('main') || document.body;
+        main.insertBefore(h, main.firstChild);
+      } else {
+        for (let i = 1; i < hs.length; i++) hs[i].remove();
+        hs[0].textContent = 'Temple Album';
+      }
+      if (document.title !== 'Temple Album') document.title = 'Temple Album';
+    });
+  </script>
 </body>
 </html>
