@@ -11,9 +11,7 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-* { 
-  box-sizing: border-box; 
-}
+* { box-sizing: border-box; }
 
 body { 
   margin: 0; 
@@ -123,24 +121,4 @@ figcaption {
   border-top: 2px solid #fbcfe8;
   background: linear-gradient(180deg, #fff0f6, #fff9fb); 
   color: #666; 
-}
-
-@media screen and (min-width: 800px) {
-  .hamburger { display: none; }
-
-  .primary-nav { 
-    position: static; 
-    opacity: 1; 
-    pointer-events: auto; 
-    flex-direction: row; 
-    gap: 1rem; 
-    background: transparent; 
-    box-shadow: none; 
-    padding: 0; 
-  }
-
-  .gallery { 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 1.2rem; 
-  }
 }
