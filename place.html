@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Colombia — Country Profile</title>
-  <meta name="description" content="Discover Colombia: culture, cuisine, landscapes and travel highlights. A pastel-inspired country profile for W03 assignment.">
+  <meta name="description" content="Explore Colombia's geography, culture, cuisine, and travel highlights. Learn about its diverse landscapes, rich traditions, and unique identity.">
   <meta name="author" content="Danielle Elisabeth Acosta Clavijo">
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
@@ -25,11 +25,12 @@
   <main class="site-main">
     <section class="hero" aria-label="Hero">
       <picture>
-        <source srcset="images/Colombian_landscape.jpg" media="(min-width: 768px)">
-        <img src="images/Colombian_landscape.jpg" alt="Colombian landscape" />
+        <source srcset="images/Colombian_landscape.webp" type="image/webp" media="(min-width: 768px)">
+        <source srcset="images/Colombian_landscape.jpg" type="image/jpeg" media="(min-width: 768px)">
+        <img src="images/Colombian_landscape.jpg" alt="Colombian landscape">
       </picture>
       <div class="hero-overlay">
-        <h1>Discover Colombia</h1>
+        <h1>Colombia — Country Profile</h1>
         <p>From the peaks of the Andes to the lush Amazon rainforest and the sunlit Caribbean coast, Colombia is a land of contrasts and colors. Its vibrant culture blends music, dance, and tradition with breathtaking landscapes and warm hospitality. Whether exploring colonial cities, coffee plantations, or tropical beaches, Colombia invites you to discover its beauty, diversity, and spirit.</p>
       </div>
     </section>
@@ -66,15 +67,27 @@
       <h2 id="gallery-heading">Gallery</h2>
       <div class="grid">
         <figure>
-          <img src="images/Andes_region.jpg" alt="Andes region">
+          <picture>
+            <source srcset="images/Andes_region.webp" type="image/webp">
+            <source srcset="images/Andes_region.jpg" type="image/jpeg">
+            <img src="images/Andes_region.jpg" alt="Andes region">
+          </picture>
           <figcaption>Andes</figcaption>
         </figure>
         <figure>
-          <img src="images/Caribbean_coast.jpg" alt="Caribbean coast">
+          <picture>
+            <source srcset="images/Caribbean_coast.webp" type="image/webp">
+            <source srcset="images/Caribbean_coast.jpg" type="image/jpeg">
+            <img src="images/Caribbean_coast.jpg" alt="Caribbean coast">
+          </picture>
           <figcaption>Caribbean Coast</figcaption>
         </figure>
         <figure>
-          <img src="images/Coffee_region.jpg" alt="Coffee region">
+          <picture>
+            <source srcset="images/Coffee_region.webp" type="image/webp">
+            <source srcset="images/Coffee_region.jpg" type="image/jpeg">
+            <img src="images/Coffee_region.jpg" alt="Coffee region">
+          </picture>
           <figcaption>Coffee Region</figcaption>
         </figure>
       </div>
