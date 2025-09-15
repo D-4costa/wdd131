@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Colombia — Country Profile</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">Colombia</div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Cuisine</a></li>
+        <li><a href="#">Travel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="hero" aria-label="Hero">
+      <picture>
+        <source srcset="images/Colombian_landscape.jpg" media="(min-width: 768px)">
+        <img src="images/Colombian_landscape.jpg" alt="Colombian landscape" />
+      </picture>
+      <div class="hero-overlay">
+        <h1>Discover Colombia</h1>
+        <p>From the peaks of the Andes to the lush Amazon rainforest and the sunlit Caribbean coast, Colombia is a land of contrasts and colors. Its vibrant culture blends music, dance, and tradition with breathtaking landscapes and warm hospitality. Whether exploring colonial cities, coffee plantations, or tropical beaches, Colombia invites you to discover its beauty, diversity, and spirit.</p>
+      </div>
+    </section>
+
+    <section class="intro card" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">About</h2>
+      <p>Colombia blends towering Andean peaks, lush Amazon rainforest and vibrant Caribbean shores — a country of color, food and song. This page offers a quick glimpse and a pastel-inspired presentation for your W03 assignment.</p>
+    </section>
+
+    <aside class="sidebar">
+      <section class="weather card" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Weather</h2>
+        <div class="weather-row">
+          <img class="weather-icon" src="images/weather.svg" alt="Weather icon (cloud and sun)">
+          <div class="weather-info">
+            <p><strong>Temperature:</strong> 22°C (Bogotá)</p>
+            <p><strong>Wind:</strong> 12 km/h</p>
+            <p><strong>Wind Chill:</strong> 21°C</p>
+          </div>
+        </div>
+      </section>
+      
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights card" aria-labelledby="highlights-heading">
+        <h3 id="highlights-heading">Highlights</h3>
+        <ul>
+          <li><strong>Andes:</strong> Scenic mountain routes and coffee farms.</li>
+          <li><strong>Caribbean Coast:</strong> Colorful colonial cities & festivals.</li>
+          <li><strong>Coffee Triangle:</strong> Landscapes and artisanal brews.</li>
+        </ul>
+      </section>
+    </aside>
+
+    <section class="gallery card" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Gallery</h2>
+      <div class="grid">
+        <figure>
+          <img src="images/Andes_region.jpg" alt="Andes region">
+          <figcaption>Andes</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Caribbean_coast.jpg" alt="Caribbean coast">
+          <figcaption>Caribbean Coast</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Coffee_region.jpg" alt="Coffee region">
+          <figcaption>Coffee Region</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Danielle Elisabeth Acosta Clavijo — <span id="lastModified"></span></p>
+    <p>W03 Assignment: Country Page</p>
+  </footer>
+</body>
+</html>
