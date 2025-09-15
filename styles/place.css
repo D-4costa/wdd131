@@ -236,6 +236,10 @@ main{
     content: " ⛅";
     display: inline;
   }
+
+  .weather-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 699px) {
@@ -246,5 +250,9 @@ main{
 
   .hero-overlay p {
     text-align: center;
+  }
+
+  .weather-icon {
+    display: grid;
   }
 }
