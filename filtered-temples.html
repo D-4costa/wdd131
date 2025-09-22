@@ -2,17 +2,22 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temple Picture Album – LDS Temples Worldwide</title>
   <meta name="description" content="Explore a collection of temple pictures from around the world, including dedication date, location, and area.">
   <meta name="author" content="Danielle Elisabeth Acosta Clavijo">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/filtered-temples.css">
 </head>
 <body>
   <header class="site-header">
     <div class="brand">Temple Album</div>
-    <button class="hamburger" aria-label="Toggle Menu">☰</button>
+    <button class="hamburger" aria-label="Toggle menu">☰</button>
     <nav class="primary-nav">
       <a href="#" data-filter="home">Home</a>
       <a href="#" data-filter="old">Old</a>
@@ -24,14 +29,15 @@
 
   <main>
     <h1>Temple Picture Album</h1>
-    <section class="gallery" id="gallery"></section>
+    <section class="gallery"></section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Danielle Elisabeth Acosta Clavijo</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>Last modified: <span id="lastModified"></span></p>
   </footer>
 
+  <!-- Scripts -->
   <script src="scripts/filtered-temples.js" defer></script>
 </body>
 </html>
