@@ -46,15 +46,15 @@ const temples = [
     area: 9600,
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
-},
-
+ },
+  // 🔽 Nuevos templos añadidos 🔽
   {
     templeName: "Salt Lake Utah",
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-lds-850084-wallpaper.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Salt_Lake_Temple.jpg/400px-Salt_Lake_Temple.jpg"
   },
   {
     templeName: "Mexico City Mexico",
@@ -62,7 +62,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-lds-854656-wallpaper.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Templo_de_la_Ciudad_de_M%C3%A9xico.JPG/400px-Templo_de_la_Ciudad_de_M%C3%A9xico.JPG"
   },
   {
     templeName: "Rome Italy",
@@ -70,7 +70,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 41010,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-lds-2195465-wallpaper.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Rome_Italy_Temple.jpg/400px-Rome_Italy_Temple.jpg"
   },
   {
     templeName: "Seoul Korea",
@@ -78,7 +78,7 @@ const temples = [
     dedicated: "1985, December, 14",
     area: 28057,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-856980-wallpaper.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Seoul_Korea_Temple.jpg/400px-Seoul_Korea_Temple.jpg"
   }
 ];
 
