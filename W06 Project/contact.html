@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Kitty Café & Bakery</title>
+  <meta name="description" content="Contact page for Kitty Café & Bakery">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header container">
+    <div class="brand-area">
+      <div class="logo" aria-hidden="true"></div>
+      <a class="brand" href="index.html">Kitty Café & Bakery</a>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p>Send us a quick message and we'll get back to you.</p>
+
+    <form id="contactForm" novalidate>
+      <label for="c-name">Name</label>
+      <input id="c-name" name="name" required minlength="2">
+      <label for="c-email">Email</label>
+      <input id="c-email" name="email" type="email" required>
+      <label for="c-msg">Message</label>
+      <textarea id="c-msg" name="message" rows="5" required></textarea>
+      <button type="submit" class="btn mint">Send</button>
+    </form>
+
+    <section id="savedMessages">
+      <h3>Saved messages (local)</h3>
+      <ul id="messagesList"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="yearContact"></span> Kitty Café & Bakery</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

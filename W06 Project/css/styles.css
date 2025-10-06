@@ -1,0 +1,73 @@
+:root{
+  --pastel-pink: #FADADD;
+  --mint: #A8E6CE;
+  --soft-beige: #FFF8F0;
+  --accent: #D46A6A;
+  --muted: #6b6b6b;
+  --max-width: 1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial; margin:0; background:var(--soft-beige); color:#222}
+.container{max-width:var(--max-width); margin:0 auto; padding:1rem}
+.site-header{display:flex; align-items:center; justify-content:space-between; padding:.75rem 0}
+.brand-area{display:flex; align-items:center; gap:1rem}
+.logo{width:44px; height:44px; border-radius:8px; border:3px solid var(--accent); background:rgba(212,106,106,0.05)}
+.brand{font-weight:700; color:var(--accent); text-decoration:none}
+.nav-list{list-style:none; display:flex; gap:1.25rem; margin:0; padding:0}
+.nav-list a{text-decoration:none; color:inherit; font-weight:500}
+#menuToggle{display:none; background:none; border:none; font-size:1.2rem; cursor:pointer}
+
+/* Hero */
+.hero{background:linear-gradient(180deg, rgba(250,218,221,0.6), rgba(255,248,240,0.6)); padding-bottom:0}
+.hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center; padding:2rem 0}
+.hero-image{width:100%; border-radius:28px}
+.hero-text h1{color:var(--accent); margin:0 0 .5rem; font-size:1.9rem}
+.hero-text p{color:var(--muted); margin:0 0 1rem}
+.wave-divider{height:60px; background:transparent; margin-top:1.5rem}
+
+/* Sellers */
+.sellers{padding:2.25rem 0}
+.sellers h2{text-align:center; margin-bottom:1.5rem; font-size:1.6rem}
+.products-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; align-items:start}
+.product-card{text-align:center; background:var(--pastel-pink); padding:1rem; border-radius:20px}
+.product-card img{width:100%; height:140px; object-fit:cover; border-radius:18px}
+.center{text-align:center; margin-top:1rem}
+
+/* Special orders */
+.special{padding:2.25rem 0}
+.special-grid{display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center}
+.special-image img{width:100%; border-radius:50%}
+
+/* Feedback carousel */
+.feedback{padding:2.25rem 0; text-align:center}
+.carousel{position:relative; display:flex; align-items:center; justify-content:center; gap:1rem}
+.carousel-track{max-width:700px}
+.quote{background:white; padding:1.5rem; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,0.05)}
+
+/* Footer */
+.site-footer{padding:1.25rem 0; text-align:center; background:transparent}
+
+/* Buttons and form */
+.btn{display:inline-block; padding:.6rem 1rem; border-radius:999px; border:none; cursor:pointer; font-weight:600; text-decoration:none}
+.btn.mint{background:var(--mint); color:#114; box-shadow:0 2px 0 rgba(0,0,0,0.04)}
+form{max-width:520px}
+
+/* Modal */
+.modal{position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.35); padding:1rem}
+.modal[aria-hidden="false"]{display:flex}
+.modal-content{background:white; padding:1.25rem; border-radius:12px; width:100%; max-width:560px; position:relative}
+.modal-close{position:absolute; right:12px; top:8px; border:none; background:none; font-size:1.1rem; cursor:pointer}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr; text-align:left}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .special-grid{grid-template-columns:1fr}
+  #menuToggle{display:inline-block}
+  .nav-list{display:none}
+}
+@media (max-width:480px){
+  .products-grid{grid-template-columns:repeat(2,1fr); gap:1rem}
+  .hero-text h1{font-size:1.4rem}
+}

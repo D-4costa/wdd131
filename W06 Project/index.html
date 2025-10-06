@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kitty Café & Bakery — Home</title>
+  <meta name="description" content="Kitty Café & Bakery — sweet treats and cozy company.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header container">
+    <div class="brand-area">
+      <div class="logo" aria-hidden="true"></div>
+      <a class="brand" href="index.html">Kitty Café & Bakery</a>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button id="menuToggle" aria-controls="mainNav" aria-expanded="false">☰</button>
+      <ul id="mainNav" class="nav-list" aria-expanded="false">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <img src="images/decorative_cake.svg" alt="Decorative cake on a table" loading="lazy" class="hero-image">
+        <div class="hero-text">
+          <h1>Deliver a Blissful Dessert in Every Bite</h1>
+          <p>Handcrafted cakes and sweet treats with a gentle, cat-themed touch. Perfect for birthdays, small gatherings, or a quiet afternoon treat.</p>
+          <a class="btn mint" href="about.html">About Us</a>
+        </div>
+      </div>
+      <div class="wave-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="sellers container">
+      <h2>Check Out Our <span class="accent">Best Sellers</span></h2>
+      <div class="products-grid" id="productsGrid">
+        <!-- JS will populate product cards -->
+      </div>
+      <div class="center">
+        <button id="seeMore" class="btn mint">See More</button>
+      </div>
+    </section>
+
+    <section class="special container" id="specialSection">
+      <div class="special-grid">
+        <div class="special-text">
+          <h2>Special Orders</h2>
+          <p>Need a custom cake for a party or event? Tell us what you want and we'll make it happen.</p>
+          <button class="btn mint" id="orderNow">Place An Order</button>
+        </div>
+        <div class="special-image">
+          <img src="images/special_cake.svg" alt="Special order cake" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback container">
+      <h2>Our Customers Feedback</h2>
+      <div class="carousel" id="carousel">
+        <button class="carousel-btn left" aria-label="Previous">‹</button>
+        <div class="carousel-track" id="carouselTrack">
+          <blockquote class="quote">"The cake was delightful — beautiful and delicious." — A happy customer</blockquote>
+          <blockquote class="quote">"Cozy place, friendly staff, and the best macaroons in town." — Mina</blockquote>
+          <blockquote class="quote">"I ordered a custom cake and everyone loved it." — Jorge</blockquote>
+        </div>
+        <button class="carousel-btn right" aria-label="Next">›</button>
+      </div>
+    </section>
+
+    <section class="visit container">
+      <h3>Visit Us</h3>
+      <p>9998 Hayes Isle, Mantefurt 03581 • (505) 418-0415</p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Kitty Café & Bakery • <a href="references.html">References</a></p>
+  </footer>
+
+  <div id="orderModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close order form">✕</button>
+      <h3 id="orderTitle">Place a Special Order</h3>
+      <form id="orderForm" novalidate>
+        <label for="o-name">Name</label>
+        <input id="o-name" name="name" required minlength="2">
+        <label for="o-email">Email</label>
+        <input id="o-email" name="email" type="email" required>
+        <label for="o-details">Order details</label>
+        <textarea id="o-details" name="details" rows="4" required></textarea>
+        <button type="submit" class="btn mint">Submit Order</button>
+      </form>
+      <section id="savedOrders">
+        <h4>Saved orders (local)</h4>
+        <ul id="ordersList"></ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
